@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!--This first item is the Shadow-->
+    <item>
+        <shape>
+            <!-- set the shadow color here -->
+            <stroke
+                android:width="0.3dp"
+                android:color="#7000" />
+
+            <!-- setting the thickness of shadow (positive value will give shadow on that side) -->
+            <solid android:color="#66050505" />
+            <padding
+                android:bottom="-2dp"
+                android:left="-1dp"
+                android:right="-1dp"
+                android:top="@dimen/_6sdp" />
+
+            <corners android:radius="@dimen/_18sdp" />
+        </shape>
+    </item>
+
+    <!-- This is the normal shape-Background we usually do-->
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_18sdp" />
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="@android:color/darker_gray" />
+        </shape>
+    </item>
+
+</layer-list>
