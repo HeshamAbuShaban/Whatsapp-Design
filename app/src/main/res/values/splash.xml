@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!--switch to what theme? after splash is done ,go ahead and set your main theme-->
+        <item name="postSplashScreenTheme">@style/Theme.WhatsappDesign</item>
+
+        <!--BackgroundColor-->
+        <item name="windowSplashScreenIconBackgroundColor">@color/white</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+
+    </style>
+    <!--After that apply your appStartingActivity theme in manifests to this one-->
+    <!--After that apply installSplashScreen() in appStartingActivity aka MainActivity-->
+</resources>

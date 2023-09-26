@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chatFragment"
+        android:title="@string/chats" />
+    <item
+        android:id="@+id/statusFragment"
+        android:title="@string/status" />
+    <item
+        android:id="@+id/contactsFragment"
+        android:title="@string/contacts" />
+
+</menu>

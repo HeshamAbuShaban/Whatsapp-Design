@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Whatsapp-Design</string>
+    <string name="chats">Chats</string>
+    <string name="status">Status</string>
+    <string name="contacts">Contacts</string>
+</resources>

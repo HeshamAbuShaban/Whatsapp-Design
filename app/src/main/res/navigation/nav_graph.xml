@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chatFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="dev.training.whatsapp_design.ui.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_directMessageFragment"
+            app:destination="@id/directMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="dev.training.whatsapp_design.ui.fragments.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="dev.training.whatsapp_design.ui.fragments.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" />
+    <fragment
+        android:id="@+id/directMessageFragment"
+        android:name="dev.training.whatsapp_design.ui.fragments.DirectMessageFragment"
+        android:label="fragment_direct_message"
+        tools:layout="@layout/fragment_direct_message" />
+</navigation>

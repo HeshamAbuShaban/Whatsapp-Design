@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WhatsappDesign" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="fontFamily">@font/cairo_medium</item>
+
+        <!--Imp-->
+        <item name="android:windowBackground">@color/l_white</item>
+        <item name="android:navigationBarColor">@color/night_window_background_color</item>
+        <!--Imp-->
+
+        <!--AppTStyle-->
+        <item name="android:textViewStyle">@style/AppTextViewStyle</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="Theme.WhatsappDesign" parent="Base.Theme.WhatsappDesign" />
+</resources>
