@@ -11,12 +11,12 @@
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryPicked"
+        android:background="@color/colorPrimaryGpt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <!--ToolBar-->
-        <com.google.android.material.appbar.MaterialToolbar
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -27,7 +27,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:text="@string/app_name"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
                 android:textStyle="bold" />
 
@@ -38,44 +37,29 @@
                 android:layout_gravity="end"
                 android:layout_marginEnd="@dimen/_14sdp"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_search"
-                tools:ignore="ImageContrastCheck" />
+                android:src="@drawable/ic_history" />
 
-        </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-        <LinearLayout
+        <!--TabLayout-->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLFragSelector"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
-                android:layout_gravity="start|center_vertical"
-                android:contentDescription="@string/community_section"
-                android:src="@drawable/ic_group"
-                app:tint="@color/white" />
-
-            <!--TabLayout-->
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabLFragSelector"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:background="@color/colorPrimaryGpt"
-                android:contentDescription="@string/app_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/appBar"
-                app:tabIndicatorAnimationDuration="3"
-                app:tabIndicatorAnimationMode="elastic"
-                app:tabIndicatorColor="@color/smooth_green"
-                app:tabIndicatorFullWidth="true"
-                app:tabIndicatorGravity="stretch"
-                app:tabIndicatorHeight="4dp"
-                app:tabRippleColor="@color/white"
-                app:tabSelectedTextColor="@color/less_grey"
-                app:tabTextColor="@color/white" />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryGpt"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar"
+            app:tabIndicatorAnimationDuration="3"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="@color/smooth_green"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="stretch"
+            app:tabIndicatorHeight="4dp"
+            app:tabRippleColor="@color/white"
+            app:tabSelectedTextColor="@color/less_grey"
+            app:tabTextColor="@color/white" />
 
 
     </com.google.android.material.appbar.AppBarLayout>

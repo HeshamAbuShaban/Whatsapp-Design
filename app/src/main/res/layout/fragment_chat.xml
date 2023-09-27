@@ -20,12 +20,14 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_25sdp"
-        android:backgroundTint="@color/colorPrimaryGpt"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/colorPrimaryPicked"
         android:contentDescription="@string/make_a_chat_with_contacts"
-        android:src="@drawable/ic_home"
+        android:src="@drawable/ic_message"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="@color/white" />
+        app:rippleColor="@color/white"
+        app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,10 @@
 
     <color name="colorPrimary">#388E3C</color>
 
-    <color name="colorPrimaryGpt">#25D366</color>
+    <color name="colorPrimaryGpt">#005f53</color>
+    <color name="colorPrimaryDark">#005f53</color>
+    <color name="colorPrimaryPicked">#005f53</color>
+    <color name="colorPrimaryHold">#25d366</color>
 
     <color name="l_white">#E6FAFAFA</color>
 
