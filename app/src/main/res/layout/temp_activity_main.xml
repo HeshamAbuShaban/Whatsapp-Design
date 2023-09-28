@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.screens.MainActivity">
+    tools:context=".ui.screens.MainActivity"
+    tools:viewBindingIgnore="true">
 
     <!--AppBar-->
     <com.google.android.material.appbar.AppBarLayout
@@ -48,9 +49,10 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="@dimen/_24sdp"
+                android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
                 android:contentDescription="@string/community_section"
                 android:src="@drawable/ic_group"
                 app:tint="@color/white" />

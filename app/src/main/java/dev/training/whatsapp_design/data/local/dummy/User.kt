@@ -4,7 +4,7 @@ import android.graphics.Bitmap
 
 data class User(
     val id:Int,
-    val img:Bitmap,
+    val img:Bitmap?,
     val name:String,
     val recentMessage:String,
     val recentMessageDate:String,

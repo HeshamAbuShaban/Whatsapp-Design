@@ -9,7 +9,7 @@
     <!--ViewContainer-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/_7sdp">
 
         <!--U-img-->
@@ -26,14 +26,17 @@
         <!--U-name-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvUName"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_6sdp"
             android:layout_marginTop="@dimen/_6sdp"
+            android:ellipsize="marquee"
+            android:maxLength="23"
             android:textAlignment="textStart"
+            android:textColor="@color/black"
             android:textSize="@dimen/_14ssp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/tvDate"
+            app:layout_constraintBottom_toTopOf="@id/tvRecentMessage"
             app:layout_constraintStart_toEndOf="@id/ivUPic"
             app:layout_constraintTop_toTopOf="@id/ivUPic"
             tools:text="Hesham Abu Shaban" />
@@ -43,11 +46,13 @@
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="textStart"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:gravity="top|end"
+            android:paddingVertical="@dimen/_4sdp"
             android:textSize="@dimen/_10ssp"
             app:layout_constraintBottom_toTopOf="@id/tvRecentMessage"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tvUName"
+            app:layout_constraintStart_toEndOf="@+id/tvUName"
             app:layout_constraintTop_toTopOf="@id/tvUName"
             tools:text="2020/2/4" />
 
@@ -56,7 +61,7 @@
             android:id="@+id/tvRecentMessage"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_7sdp"
             android:layout_marginTop="@dimen/_2sdp"
             android:layout_marginBottom="@dimen/_5sdp"
             android:ellipsize="end"
