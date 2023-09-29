@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Whatsapp-Design</string>
+    <string name="chats">الدردشات</string>
+    <string name="status">الحالة</string>
+    <string name="contacts">جهات الاتصال</string>
+    <string name="yapping" translatable="false">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم. قام البروفيسور ريتشارد ماك لينتوك (Richard McClintock) وهو بروفيسور اللغة اللاتينية في جامعة هامبدن-سيدني في فيرجينيا بالبحث عن أصول كلمة لاتينية غامضة في نص لوريم إيبسوم وهي consectetur، وخلال تتبعه لهذه الكلمة في الأدب اللاتيني اكتشف المصدر الغير قابل للشك. فلقد اتضح أن كلمات نص لوريم إيبسوم تأتي من الأقسام 1.10.32 و 1.10.33 من كتاب حول أقاصي الخير والشر (de Finibus Bonorum et Malorum) للمفكر شيشيرون (Cicero) والذي كتبه في عام 45 قبل الميلاد. هذا الكتاب هو بمثابة مقالة علمية مطولة في نظرية الأخلاق، وكان له شعبية كبيرة في عصر النهضة. السطر الأول من لوريم إيبسوم Lorem ipsum dolor sit amet.. يأتي من سطر في القسم 1.20.32 من هذا الكتاب.</string>
+    <string name="calls">المكالمات</string>
+    <string name="make_a_chat_with_contacts">إجراء محادثة مع جهات الاتصال</string>
+    <string name="community_section">قسم المجتمع</string>
+    <string name="search_about_something">البحث عن شيء ما</string>
+    <string name="indicate_the_selected_screen">يظهر خيارات الشاشات الموجودة</string>
+    <string name="search">بحث</string>
+    <string name="camera">الكاميرا</string>
+    <string name="new_group">مجموعة جديدة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="linked_devices">الأجهزة المرتبطة</string>
+    <string name="new_broadcast">بث جديد</string>
+    <string name="starred_messages">الرسائل المميزة بنجمة</string>
+</resources>

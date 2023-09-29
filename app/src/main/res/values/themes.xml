@@ -3,12 +3,22 @@
     <style name="Base.Theme.WhatsappDesign" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimaryGpt</item>
         <item name="fontFamily">@font/cairo_medium</item>
 
         <!--Imp-->
-        <item name="android:windowBackground">@color/l_white</item>
-        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/white</item>
+<!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+
+        <!-- android:textColorSecondary is the color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/optionMenuIconColor</item>
+
+        <!--
+        colorSecondary is the responsible color for FloatingActionButton.
+        and
+        colorOnSecondary is the responsible color for icon color of FloatingActionButton
+        -->
+
         <!--Imp-->
 
         <!--AppTStyle-->

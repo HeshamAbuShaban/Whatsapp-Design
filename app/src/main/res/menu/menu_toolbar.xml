@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/mi_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/new_group"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mi_more_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/new_broadcast"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mi_more_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/linked_devices"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mi_more_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/starred_messages"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mi_more_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/mi_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_camera_outline"
+        android:title="@string/camera"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/mi_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+
+</menu>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,29 +11,28 @@
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryPicked">
+        android:background="@color/colorPrimaryPicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <!--ToolBar-->
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:title="WhatsApp"
             app:titleTextColor="@color/white">
 
-          <!--  &lt;!&ndash;ToolBarFarIcons&ndash;&gt;
+            <!--ToolBarFarIcon-->
             <ImageButton
-                style="@style/SelectableItemBackgroundBorderLessStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginEnd="@dimen/_5sdp"
-                android:contentDescription="@string/app_name"
+                android:background="@null"
                 android:padding="@dimen/_10sdp"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_search"
-                tools:ignore="ImageContrastCheck" />-->
-
+                tools:ignore="ImageContrastCheck" />
 
         </com.google.android.material.appbar.MaterialToolbar>
 
@@ -44,38 +43,24 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryGpt"
             android:contentDescription="@string/indicate_the_selected_screen"
-            app:tabIconTint="@color/white"
             app:tabIndicatorColor="@color/white"
             app:tabIndicatorFullWidth="true"
             app:tabIndicatorGravity="bottom"
-            app:tabMode="fixed"
-            app:tabRippleColor="@color/white"
-            app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="@color/less_white" />
+            app:tabSelectedTextColor="@color/less_white"
+            app:tabTextColor="@color/white" />
 
 
     </com.google.android.material.appbar.AppBarLayout>
+
 
     <!--ViewPager-->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vpFragChanger"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tabLFragSelector"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar" />
 
-    <!--FAB-->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/_15sdp"
-        android:background="@android:color/transparent"
-        android:backgroundTint="@color/colorPrimaryPicked"
-        android:contentDescription="@string/make_a_chat_with_contacts"
-        android:src="@drawable/ic_whatsapp_new_chat"
-        app:layout_behavior="com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior"
-        app:rippleColor="@color/white"
-        app:tint="@color/white" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
