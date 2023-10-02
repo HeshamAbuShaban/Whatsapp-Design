@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.ChatFragment">
+    tools:context=".ui.fragments.CallsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvChatUsers"
+        android:id="@+id/rvCallUsers"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:itemCount="5"
-        tools:listitem="@layout/item_chat" />
+        tools:itemCount="6"
+        tools:listitem="@layout/item_call" />
 
 </FrameLayout>

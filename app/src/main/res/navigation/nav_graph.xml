@@ -9,7 +9,7 @@
         android:id="@+id/chatFragment"
         android:name="dev.training.whatsapp_design.ui.fragments.ChatFragment"
         android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" >
+        tools:layout="@layout/fragment_chat">
         <action
             android:id="@+id/action_chatFragment_to_contactsFragment"
             app:destination="@id/contactsFragment" />
@@ -32,4 +32,19 @@
         android:name="dev.training.whatsapp_design.ui.fragments.DirectMessageFragment"
         android:label="fragment_direct_message"
         tools:layout="@layout/fragment_direct_message" />
+    <fragment
+        android:id="@+id/callsFragment"
+        android:name="dev.training.whatsapp_design.ui.fragments.CallsFragment"
+        android:label="fragment_call"
+        tools:layout="@layout/fragment_call" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="dev.training.whatsapp_design.ui.screens.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="dev.training.whatsapp_design.ui.fragments.GroupFragment"
+        android:label="GroupFragment"
+        tools:layout="@layout/fragment_group" />
 </navigation>

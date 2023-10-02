@@ -66,6 +66,7 @@
 
     <!--FAB-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMainActions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
@@ -73,7 +74,7 @@
         android:background="@android:color/transparent"
         android:backgroundTint="@color/colorPrimaryPicked"
         android:contentDescription="@string/make_a_chat_with_contacts"
-        android:src="@drawable/ic_whatsapp_new_chat"
+        android:src="@drawable/ic_new_chat"
         app:layout_behavior="com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior"
         app:rippleColor="@color/white"
         app:tint="@color/white" />

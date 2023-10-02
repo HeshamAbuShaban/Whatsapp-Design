@@ -15,8 +15,8 @@ import dagger.hilt.components.SingletonComponent
 import dev.training.whatsapp_design.R
 import dev.training.whatsapp_design.adapters.ChatAdapter
 import dev.training.whatsapp_design.app_system.AppConstants
+import dev.training.whatsapp_design.ui.fragments.CallsFragment
 import dev.training.whatsapp_design.ui.fragments.ChatFragment
-import dev.training.whatsapp_design.ui.fragments.ContactsFragment
 import dev.training.whatsapp_design.ui.fragments.GroupFragment
 import dev.training.whatsapp_design.ui.fragments.StatusFragment
 import javax.inject.Singleton
@@ -62,7 +62,7 @@ object AppModule {
         GroupFragment(),
         ChatFragment(),
         StatusFragment(),
-        ContactsFragment()
+        CallsFragment()
     )
 
     /*@Singleton

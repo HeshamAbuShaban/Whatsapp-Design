@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SelectableItemBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp"
+    android:weightSum="3">
+
+    <!--U-img-->
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/ivUPic"
+        android:layout_width="@dimen/_46sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:src="@drawable/ic_placeholder_person"
+        app:roundPercent="30"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <!--Text-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!--U-name-->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            tools:text="Hesham Abu Shaban" />
+
+
+        <!--Date & Type Container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Condition-->
+            <ImageView
+                android:id="@+id/ivCallCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/type_of_call_record"
+                android:src="@drawable/ic_outgoing"
+                app:tint="@color/colorPrimary" />
+
+            <!--U-Date-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10ssp"
+                tools:text="2020/9/29" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--PrefixIconCall-->
+    <ImageButton
+        android:id="@+id/ivCallAction"
+        style="@style/SelectableItemBackgroundBorderLessStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:contentDescription="@string/make_a_voice_call"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_call" />
+
+</LinearLayout>

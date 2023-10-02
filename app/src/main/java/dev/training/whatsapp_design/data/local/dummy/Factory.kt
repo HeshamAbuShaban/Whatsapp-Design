@@ -11,7 +11,13 @@ object Factory {
                 2, null, "Baker AbuShaban", "Hey, Where are you!?", "2023/9/25", 0
             ),
 
-            User(3, null, "Mo-taz Hesham Mohamed Ali AbuShaban","Hey, Check this out", "2023/9/28", 4
+            User(
+                3,
+                null,
+                "Mo-taz Hesham Mohamed Ali AbuShaban",
+                "Hey, Check this out",
+                "2023/9/28",
+                4
             ),
 
             User(
@@ -36,6 +42,82 @@ object Factory {
             ),
             User(
                 10, null, "Haitham AbuShaban", "Hey, Do you wanna play", "2023/9/26", 1
+            ),
+        )
+
+    val listOfCalls: List<Call>
+        get() = listOf(
+            Call(
+                null,
+                "Mom-en Ses-alem",
+                0,
+                1,
+                1,
+                "today,2023-10-1"
+            ),
+            Call(
+                null,
+                "Omar AbuSha-nab",
+                0,
+                1,
+                5,
+                "2 month ago,2023-8-4"
+            ),
+            Call(
+                null,
+                "Hesham AbuShaban",
+                1,
+                0,
+                1,
+                "today,2023-10-1"
+            ),
+            Call(
+                null,
+                "Baker AbuShaban",
+                0,
+                1,
+                1,
+                "last month,2023-9-1"
+            ),
+            Call(
+                null,
+                "Mum💖",
+                0,
+                1,
+                3,
+                "last month,2023-9-28"
+            ),
+            Call(
+                null,
+                "Dad\uD83C\uDF39",
+                0,
+                1,
+                3,
+                "last month,2023-9-28"
+            ),
+            Call(
+                null,
+                "Omar AbuSha-nab",
+                1,
+                0,
+                2,
+                "2 month ago,2023-8-4"
+            ),
+            Call(
+                null,
+                "Omar AbuSha-nab",
+                1,
+                1,
+                5,
+                "2 month ago,2023-8-4"
+            ),
+            Call(
+                null,
+                "Fares F",
+                1,
+                1,
+                2,
+                "year ago,2022-10-20"
             ),
         )
 }
